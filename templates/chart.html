@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+
+
+
+{% block title %} Home {% endblock %}
+
+
+
+{% block body %}
+<!-- <style>
+    h2 {
+        text-align: center;
+    }
+
+    .chart {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+</style>
+<div class="col-lg-12 row">
+    <div class="col-lg-6">
+        <h2>Salary Chart</h2>
+        <div class="chart" id="bargraph">
+            <script>
+                var graphs = {{ plot | safe}};
+                Plotly.plot('bargraph', graphs, {});
+            </script>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <h2>Experience Chart</h2>
+        <div class="chart" id="experience_bar">
+            <script>
+                var graphs = {{ plot2 | safe}};
+                Plotly.plot('experience_bar', graphs, {});
+            </script>
+        </div>
+    </div>
+</div> -->
+{% endblock %}

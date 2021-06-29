@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "firstName": "updated",
+      "lastName": "kumar",
+      "email": "arun@golittlebig.com",
+      "mobile": "979037563457",
+      "salary": "98786946"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

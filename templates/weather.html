@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+
+
+
+{% block title %} Home {% endblock %}
+
+
+
+{% block body %}
+
+    <div class="container d-flex justify-content-center">
+        <div class="weather">
+            <div class=" col-md-6">
+                
+                <div class="card"> <span class="icon">
+                    <img class="img-fluid" src="{{weather.4}}" />
+                </span>
+                    
+                    <div class="title">
+                        <p>{{weather.3}}</p>
+                    </div>
+                    <div class="temp">{{weather.0}}<sup>&deg;</sup></div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="header">General</div>
+                            <div class="value">{{weather.2}}</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="header">Wind Speed</div>
+                            <div class="value">{{weather.1}} m/s.</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="header">Fire</div>
+                            <div class="value">No</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>    
+{% endblock %}

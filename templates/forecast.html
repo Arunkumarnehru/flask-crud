@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+
+
+
+{% block title %} Home {% endblock %}
+
+
+
+{% block body %}
+<div class="container d-flex justify-content-center">
+    <div class="row">
+        {% for key, value in weather.items() %}
+        <h1>{{value}}</h1>
+        <div class="weather">
+            <div class="col-md-6">
+                <div class="card">
+
+                    <div class="title">
+                        <p>{{value.4}}</p>
+                    </div>
+                    <div class="temp">{{value.1}}<sup>&deg;</sup></div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="header">General</div>
+                            <div class="value">{{value.3}}</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="header">Wind Speed</div>
+                            <div class="value">{{value.4}} m/s.</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="header">Date</div>
+                            <div class="value">{{value.2}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
